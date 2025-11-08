@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* Element Selector */
+        
+        /* Class Selector */
+        .red {
+            color: aqua;
+        }
+        /* ID Selector */
+        #green {
+            color: blueviolet;
+        }
+        /* Child Selector */
+        div > p {
+            color: brown;
+        }
+        /* Descendant Selector */
+        div p {
+            color: chartreuse;
+        }
+        /* Universal Selector */
+        * {
+            background-color: darkgoldenrod;
+            margin: 0%;
+            padding: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class = "red">
+        I am a div
+        <article>
+            <p>
+                Hello guys
+            </p>
+        </article>
+    </div>
+    <div id = "green">
+        I am the div
+    </div>
+</body>
+</html>

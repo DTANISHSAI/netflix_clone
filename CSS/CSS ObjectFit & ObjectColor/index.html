@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object Fit and Object Color</title>
+    <style>
+        .container {
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            /* background-color: azure; */
+            background-image: url(https://images.pexels.com/photos/943091/pexels-photo-943091.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+            background-repeat: no-repeat;
+            background-position: center center; 
+            background-clip: border-box;
+        }
+        img {
+            width: 466px;
+            height: 488px;
+            /* object-fit: cover; This will crop the image to fit the container */
+            /* object-fit: fill; This will stretch the image to fill the container */
+            /* object-position: bottom right; */
+            object-position: 10px 20px;
+            object-fit: contain; /* This will scale the image to fit the container without cropping */
+            /* object-fit: fill; This will stretch the image to fill the container */
+            /* object-fit: scale-down;  This will scale the image down to fit the container without cropping */
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <!-- <img src="D TANISHSAI.jpg" alt=""> -->
+    </div>
+</body>
+</html>

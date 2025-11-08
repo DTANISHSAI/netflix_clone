@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FLEXBOX</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /*justify-content: center;  /* keeps the items to the center */
+            /* justify-content: space-around;  keeps the items to the center with equal space around */
+            /* justify-content: flex-end;   keeps the items to the right */
+            /* justify-content: flex-start;   keeps the items to the left */
+            /* align-items: baseline;  keeps the items to the baseline */
+            align-items: center; /* keeps the items to the center */
+            /*flex-direction: column; /* keeps the items in column */
+            /* flex-direction: column-reverse;  keeps the items in column in reverse */
+            /* flex-direction: row;  keeps the items in row */
+            /* flex-direction: row-reverse;  keeps the items in row in reverse */
+            flex-wrap: wrap;  /*keeps the items in wrap */
+            /* flex-wrap: wrap-reverse;  keeps the items in wrap in reverse */
+            align-content: flex-start;  /* keeps the items to the center */
+            /* align-content: center;  keeps the items to the center */
+            /* there is not justify-items property in flexbox*/
+            flex-flow: row wrap;  /* (flex-flow:<flex-direction><flex-wrap>) => keeps the items in row wrap */
+            gap: 30px;  /* gap between the items */
+            gap: xpx ypx;  /* row-gap and column-gap */
+            /* row-gap: 30px;  gap between the items 
+            column-gap: 30px;  gap between the items */
+        }
+        .items {
+            width: 62px;
+            height: 62px;
+            background-color: blueviolet;
+            border: 2px solid black;
+            /* margin: 4px; */
+        }
+
+        .order-1 {
+            order: 1;  /* order of the items */
+        }
+
+        .order-2 {
+            order: 2;  /* order of the items */
+        }
+
+        .order-3 {
+            order: 3;  /* order of the items */
+        }
+
+        .item1 {
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="items item1">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items order-1">4</div>
+            <div class="items">5</div>
+            <div class="items">6</div>
+            <div class="items">7</div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            
+        </div>
+    </main>
+</body>
+</html>

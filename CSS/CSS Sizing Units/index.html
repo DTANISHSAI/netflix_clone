@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        html {
+            font-size: 12px;
+        }
+        *{
+            margin: 10;
+            padding: 10;
+            text-align: center;
+        }
+        .box {
+            box-sizing: border-box;
+            border : 2px solid blueviolet;
+            /* width : 233px; */
+            width : 80vw;
+            height : 20vh;
+            margin: auto;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        .container {
+            box-sizing: border-box;
+            border : 2px solid blueviolet;
+            /* width : 233px; */
+            width : 80vw;
+            /* height : 80vh; */
+            margin: 23px auto;
+            font-size: 16px;
+            background-color: aquamarine;
+            text-align: center;
+        }
+        .container p {
+            font-size: 1.1rem;
+            width : 50%;
+            border : 2px solid blueviolet;
+            padding : 2px auto;
+            box-sizing: border-box;
+            margin: 23px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "box">
+        This is a box
+    </div>
+    <div class = "container">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil velit excepturi rerum! Delectus, possimus! Beatae molestiae explicabo, ipsa, molestias fugit nesciunt doloribus assumenda cupiditate consequuntur sunt nulla dicta eveniet vel sit quidem praesentium porro, incidunt omnis cumque temporibus? Eius alias, tempora velit ipsam itaque blanditiis.
+        </p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti saepe error dicta delectus explicabo ea, odit sapiente officiis! Placeat totam eos sapiente quo dignissimos similique quae quisquam perspiciatis in ab aspernatur, animi laudantium, officia magnam harum nam dolore voluptate enim distinctio veritatis officiis fuga? Tempora sint nesciunt itaque alias accusamus quis. Eveniet aspernatur excepturi beatae. Molestiae!
+    </div>
+    
+</body>
+</html>
